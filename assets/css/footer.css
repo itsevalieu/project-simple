@@ -1,0 +1,13 @@
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+footer p {
+	font-weight: 600;
+}
+footer ul {
+	align-items: flex-start;
+	padding: 0px 0px;
+}

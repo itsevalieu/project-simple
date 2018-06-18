@@ -1,0 +1,30 @@
+.logo {
+  font-weight: 400;
+  margin-left: 1em;
+}
+nav {
+  position: fixed;
+  height: 80px;
+  top: 0px;
+  right: 0px;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin: 0 0;
+}
+li {
+  list-style: none;
+  margin-right: 1.5em;
+}

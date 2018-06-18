@@ -1,0 +1,44 @@
+#contact {
+  min-height: 50vh;
+  border: 1px solid black;
+  padding: 3em 100px;
+}
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+input {
+	width: 50%;
+}
+textarea {
+	height: 100px;
+	width: 50%;
+}
+button {
+	height: 35px;
+	width: 150px;
+}
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){}
+@media screen and (min-width: 760px) and (max-width: 945px){
+	input {
+		width: 75%;
+	}
+	textarea {
+		height: 100px;
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 760px) {
+	input {
+		width: 100%;
+	}
+	textarea {
+		height: 100px;
+		width: 100%;
+	}
+}
