@@ -12,6 +12,7 @@ form {
 }
 input {
 	width: 50%;
+	height: 25px;
 }
 textarea {
 	height: 100px;
@@ -34,6 +35,10 @@ button {
 	}
 }
 @media only screen and (max-width: 760px) {
+	#contact {
+		min-height: 50vh;
+		padding: 100px 25px;
+	}
 	input {
 		width: 100%;
 	}
