@@ -1,7 +1,7 @@
 #contact {
   min-height: 50vh;
-  border: 1px solid black;
-  padding: 3em 100px;
+  padding: 100px 100px;
+  background: #f8faf9;
 }
 form {
 	display: flex;

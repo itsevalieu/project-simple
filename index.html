@@ -6,7 +6,7 @@
     <meta name='theme-color' content='#000000'>
    
     <link rel='manifest' href='%PUBLIC_URL%/manifest.json'>
-    <link rel='shortcut icon' href='%PUBLIC_URL%/favicon.ico'>
+    <link rel='shortcut icon' href='./e_logo.ico'>
    
     <link href='https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Dosis:100' rel='stylesheet'>
@@ -21,41 +21,100 @@
   <body>
     <nav id=navbar>
         <ul>
-          <li><a href='#welcome-section'>ABOUT</a></li>
+          <li><a href='#about'>ABOUT</a></li>
           <li><a href='#projects'>WORK</a></li>
           <li><a href='#contact'>CONTACT</a></li>
-          <li><a href='' id=profile-link>GITHUB</a></li>
         </ul>
     </nav>
     <main>
       <section id='welcome-section'>
         <div>
-          <h2 class='logo'>EVA LIEU</h1>
+          <a href='#welcome-section'><img src='./assets/icons/e_logo.png' alt='Twitter'></a>
         </div>
-        <h1>Web Developer</h1>
+        <div>
+          <h1 class='logo'>EVA LIEU</h1>
+          <h2>WEB DEVELOPER</h2>
+        </div>
       </section>
+
+      <section id='about'>
+        <div>
+          <h2>- I'm Eva Lieu,<br/> a web developer, designer & tea addict.</h2>
+          <p>I've always been enamored with beautiful yet simple design and development. My skills are broad: from user experience to design, front end to back end development. I enjoy each aspect, and love building sites from start to finish. Give me the details and I'll hash them out step by step with meticulous care and efficiency. 
+
+
+        </div>
+        <div>
+          <h2>What I Do</h2>
+          <p>
+            Front-end
+            CSS3, Javascript, ES6, React
+          </p>
+          <p>
+            Back-end
+            NodeJS, Python, APIs, MySQL, NoSQL
+          </p>
+            CMS
+            Wordpress
+            <p>
+              Cloud
+              Firebase
+            </p>
+            <p>
+            E-Commerce
+            Woocommerce, Shopify, Magento,
+          </p>
+        </div>
+        <div>
+          <h2>Things I'm Looking Forward To</h2>
+          <p>
+            How to Train Your Dragon 3
+            Kingdom Hearts 3
+            Carne Asada Fries
+            React and Redux
+          </p>
+        </div>  
+      </section>
+
       <section id='projects'>
-        <div class='project-tile'>
-         <a href='#'>Static Tribute Page</a>
-        </div>
-        <div class='project-tile'>
-         <a href='#'>Static Tribute Page</a>
-        </div>
-        <div class='project-tile'>
-         <a href='#'>Static Tribute Page</a>
+        <h2>Recent Work</h2>
+        <div class='projects'>
+          <a href='#' target='_blank' class='project-tile'>
+            <h2>Teafographic</h2>
+            <p>Responsive landing page for a subscription tea-box. Includes a tea encyclopedia.</p>
+            <p>React, Javascript, Custom CSS3, HTML, Netlify</p>
+          </a>
+          <a href='#' target='_blank' class='project-tile'>
+            <h2>Wally Tribune</h2>
+            <p>Static tribute page for a cat named Wally. Occasional blog updates on the mundane life of a cat and her owner.</p>
+            <p>Javascript, Custom CSS3, HTML5</p>
+          </a>
+          <a href='#' target='_blank' class='project-tile'>
+            <h2>Article Scraper</h2>
+            <p>New York Times article scraper with responsive web design.</p>
+            <p>React, Javascript, New York Times API, Axios, Custom CSS3, HTML5</p>
+          </a>
+          <a href='#' target='_blank' class='project-tile'>
+            <h2>Jukebox</h2>
+            <p>A music playlist application promoting community via chat.</p>
+            <p>Firebase, Javascript, jQuery, iTunes API, Bootstrap, HTML5</p>
+          </a>
         </div>
       </section>
+
       <section id='contact'>
         <form name="contact" method="POST" netlify>
-          <p>Contact me below! <br/>Let's build something cool or talk about code over a cuppa tea.</p>
-            <input type="text" name="name" placeholder="Name" /><br/>
-            <input type="email" name="email" placeholder='Email'/><br/>
-            <input type="text" name="company" placeholder='Company/Organization'/><br/>
-            <textarea name="message" placeholder="Message"></textarea><br/>
-            <button type="submit">Send</button>
+          <h2>Contact Me</h2> 
+          <p>Let's build something cool or talk about code over a cuppa tea!</p>
+          <input type="text" name="name" placeholder="Name" /><br/>
+          <input type="email" name="email" placeholder='Email'/><br/>
+          <input type="text" name="company" placeholder='Company/Organization'/><br/>
+          <textarea name="message" placeholder="Message"></textarea><br/>
+          <button type="submit">Send</button>
         </form>
       </section>
     </main>
+
     <footer>
       <div>
         <p>Follow Me</p>
@@ -63,10 +122,12 @@
           <li><a href='https://github.com/itsevalieu' target='_blank'><img src='./assets/icons/github-logo.png' alt='Github'></a></li>
           <li><a href='https://www.linkedin.com/in/eva-lieu/' target='_blank' id=profile-link><img src='./assets/icons/linkedin-logo.png' alt='Linkedin'></a></li>
           <li><a href='https://twitter.com/itsevalieu' target='_blank'><img src='./assets/icons/twitter-logo.png' alt='Twitter'></a></li>
-          <li><a href='/itsevalieu@gmail.com' target='_blank'><img src='./assets/icons/email-logo.png' alt='Email'></a></li>
+          <li><a href='mailto:itsevalieu@gmail.com'><img src='./assets/icons/email-logo.png' alt='Email'></a></li>
         </ul>
         <p>© Eva Lieu 2018</p>
       </div>
   </footer>
+  <script src='https://cdn.jsdelivr.net/momentjs/2.10.6/moment-with-locales.min.js'></script>
+  <script type='text/javascript' src='../src/app.js'></script>
   </body>
 </html>

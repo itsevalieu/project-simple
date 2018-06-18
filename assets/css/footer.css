@@ -2,7 +2,9 @@ footer {
   grid-area: footer;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-end;
+  align-items: flex-start;
+  padding: 0 2em;
+  background: #f8faf9;
 }
 footer p {
 	font-weight: 600;
@@ -10,4 +12,21 @@ footer p {
 footer ul {
 	align-items: flex-start;
 	padding: 0px 0px;
+}
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){
+  footer {
+    padding: 20px 75px 50px 75px;
+  }  
+}
+@media screen and (min-width: 760px) and (max-width: 945px){
+  footer {
+    padding: 20px 50px 50px 50px;
+  }  
+}
+@media only screen and (max-width: 760px) {
+	footer {
+		padding: 20px 25px 50px 25px;
+   	}
 }
