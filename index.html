@@ -68,11 +68,10 @@
         <div>
           <h2>Things I'm Ridiculously Excited For:</h2>
           <ol>
-            <li>How to Train Your Dragon 3 <span id='httyd'></span></li>
+            <li>How to Train Your Dragon 3: <span id='httyd'></span></li>
             <li>Kingdom Hearts 3 <span id='kh3'></span></li>
             <li>Big Data Day LA <span id='bddla'></span></li>
             <li>Incredibles 2 <span id='i2'></span></li>
-            dd<div id='days'></div><div id='hours'></div><div id='minutes'></div><div id='seconds'></div>
           </ol>
         </div>  
       </section>
@@ -88,6 +87,11 @@
           <a href='#' target='_blank' class='project-tile'>
             <h2>Wally Tribune</h2>
             <p>Static tribute page for a cat named Wally. Occasional blog updates on the mundane life of a cat and her owner.</p>
+            <p>Javascript, Custom CSS3, HTML5</p>
+          </a>
+          <a href='https://birdpicktea.com/pages/drinkgenerator' target='_blank' class='project-tile'>
+            <h2>Bird Pick Drink Generator</h2>
+            <p>Random drink generator app for teas embedded on Shopify website.</p>
             <p>Javascript, Custom CSS3, HTML5</p>
           </a>
           <a href='#' target='_blank' class='project-tile'>
@@ -128,38 +132,14 @@
         <p>© Eva Lieu 2018</p>
       </div>
   </footer>
-  <script src='https://cdn.jsdelivr.net/momentjs/2.10.6/moment-with-locales.min.js'></script>
   <script>
-    // function update() {
-
-    //   $('#clock'),
-    //     eventTime = moment('27-11-2020 08:30:00', 'DD-MM-YYYY HH:mm:ss').unix(),
-    //     currentTime = moment().unix(),
-    //     diffTime = eventTime - currentTime,
-    //     duration = moment.duration(diffTime * 1000, 'milliseconds'),
-    //     interval = 1000;
-    //   let now = moment().format('M D YYYY');
-    //   let kh3date = moment().set({'year': 2019, 'month': 0, 'date': 25}).format('M D YYYY');
-    //   let httyd = moment().set({'year': 2019, 'month': 2, 'date': 1}).format('M D YYYY');
-    //   let i2 = moment().set({'year': 2018, 'month': 5, 'date': 15}).format('M D YYYY');
-    //   let bddla = moment().set({'year': 2018, 'month': 7, 'date': 11}).format('M D YYYY');
-
-    //   document.getElementById('httyd').innerHTML = httyd;
-    //   document.getElementById('kh3').innerHTML = kh3date;
-    //   document.getElementById('i2').innerHTML = i2;
-    //   document.getElementById('bddla').innerHTML = bddla;
-    // }
-    // window.onload = function(e) {
-    //   let kh3time = moment('00-25-2019 00:00:00', 'MM-DD-YYYY HH:mm:ss').unix();
-    //   document.getElementById('kh3').innerHTML = kh3time;
-    // }
-    function countdown(endDate) {
+    function countdown(endDate, id) {
   let days, hours, minutes, seconds;
   
   endDate = new Date(endDate).getTime();
   
   if (isNaN(endDate)) {
-  return;
+    return;
   }
   
   setInterval(calculate, 1000);
@@ -182,18 +162,19 @@
       
       seconds = parseInt(timeRemaining);
       
-      document.getElementById("days").innerHTML = parseInt(days, 10);
-      document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
-      document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
-      document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
+      document.getElementById(id).innerHTML = parseInt(days, 10) + ' days, ' + ("0" + hours).slice(-2) + ' hours, ' + ("0" + minutes).slice(-2) + ' minutes, ' + ("0" + seconds).slice(-2) + ' seconds left!';
     } else {
+      document.getElementById(id).innerHTML = 'Released! Go check it out!';
       return;
     }
   }
 }
 
 (function () { 
-  countdown('01/25/2019 05:00:00 PM'); 
+  countdown('03/01/2019 12:00:00 AM', 'httyd'); 
+  countdown('01/25/2019 12:00:00 AM','kh3');
+  countdown('08/11/2018 08:00:00 AM','bddla');
+  countdown('06/15/2018 12:00:00 AM','i2');
 }());
   </script>
   </body>
