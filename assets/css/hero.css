@@ -1,0 +1,47 @@
+#welcome-section {
+  height: 90vh;
+  padding: 20px 100px 50px 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background: url('../images/rawpixel.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+}
+#welcome-section h1, h2 {
+	font-weight: 400;
+	text-shadow: 1px 1px 1px #a2c4c9;
+}
+/*==========Media Queries==========*/
+@media screen and (min-width: 1240px){}
+@media screen and (min-width: 945px) and (max-width: 1240px){
+  #welcome-section, #about {
+    padding: 20px 75px 50px 75px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 945px){
+  #welcome-section {
+    padding: 20px 50px 50px 50px;
+    background-size: auto 100%;
+    justify-content: flex-end;
+  }  
+  #welcome-section img {
+    border: 1px solid #eee;
+  }
+}
+@media only screen and (max-width: 450px) {
+   #welcome-section {
+    background: url('../images/sarah.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    padding: 20px 25px 50px 25px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  #welcome-section img {
+    border: 1px solid #dde;
+  }
+}

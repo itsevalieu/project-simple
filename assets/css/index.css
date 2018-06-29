@@ -1,4 +1,4 @@
-html {
+html, div {
   box-sizing: border-box;
 }
 *, *::before *::after {
@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(180deg, #ffffff, #fbfdfc, #f9fbfa); 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
   display: grid;
   grid-template-columns: 100%;
@@ -20,4 +20,12 @@ body {
 }
 main {
   height: 100%;
+}
+p, li {
+  font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+}
+hr {
+  border-width: 0.5px;
+  border-color: #a2c4c9;
 }

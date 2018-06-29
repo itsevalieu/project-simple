@@ -17,7 +17,7 @@ nav li:hover {
   transform: scale(1.1);
 
 }
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -33,8 +33,8 @@ li {
 /*==========Media Queries==========*/
 @media screen and (min-width: 1240px){}
 @media screen and (min-width: 945px) and (max-width: 1240px){}
-@media screen and (min-width: 760px) and (max-width: 945px){}
-@media only screen and (max-width: 760px) {
+@media screen and (min-width: 450px) and (max-width: 945px){}
+@media only screen and (max-width: 450px) {
   nav {
     display: none;
   }
