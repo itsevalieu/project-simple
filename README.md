@@ -1,6 +1,6 @@
 # Project-Simple
 
-*Status: Core Features Complete, Add-On Features In Progress *
+*Status: Core Features Complete, Add-On Features In Progress*
 
 Simple personal portfolio website using bare minimum HTML5, CSS3, JavaScript. Deployed on Netlify
 
